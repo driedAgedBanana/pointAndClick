@@ -24,3 +24,15 @@ body {
     position: absolute;
     background-color: wheat;
 }
+
+.foreground {
+    z-index: 1000;
+}
+
+.character {
+    z-index: 100;
+}
+
+.background {
+    z-index: 0;
+}
