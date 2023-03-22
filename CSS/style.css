@@ -11,6 +11,11 @@ body {
     text-align: center;
 }
 
+#mainChar {
+    left: 347px;
+    top: 20px;
+}
+
 #gameWindow {
     width: 800px;
     height: 608px;
@@ -22,7 +27,7 @@ body {
 
 .gameObject{ 
     position: absolute;
-    background-color: wheat;
+    /*background-color: wheat;*/
 }
 
 .foreground {
