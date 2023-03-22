@@ -1,4 +1,21 @@
 body {
     background-color: black;
     color: #fff;
+    display: grid;
+    grid-template-columns: auto 800px auto;
+}
+
+#mainTitle {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    text-align: center;
+}
+
+#gameWindow {
+    width: 800px;
+    height: 608px;
+    background-color: red;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    position: relative;
 }
