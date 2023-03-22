@@ -16,6 +16,20 @@ body {
     top: 20px;
 }
 
+#funeral1 {
+    width: 70px;
+    height: 37px;
+    left: 702px;
+    top: 377px;
+}
+
+#grass1 {
+    width: 70px;
+    height: 45px;
+    left: 300px;
+    top: 28px;
+}
+
 #gameWindow {
     width: 800px;
     height: 608px;
@@ -27,7 +41,8 @@ body {
 
 .gameObject{ 
     position: absolute;
-    /*background-color: wheat;*/
+    transition: all 1s ease-in-out;
+    background-color: wheat;
 }
 
 .foreground {
