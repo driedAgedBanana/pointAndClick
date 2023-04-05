@@ -16,6 +16,31 @@ body {
     top: 20px;
 }
 
+/*Dialouge bar*/
+#diagBar {
+    bottom: 0px;
+    left: 0px;
+    width: 823px;
+    height: 64px;
+}
+
+#diagContent {
+    position: relative;
+}
+
+#mainCharSpeech {
+    top: 0px;
+    left: 80px;
+    bottom: 0px;
+}
+
+#brownBar {
+    position: absolute;
+    background-color: brown;
+    height: 36px;
+    width: 823px;
+}
+
 #funeral1 {
     width: 70px;
     height: 37px;
@@ -42,11 +67,22 @@ body {
 .gameObject{ 
     position: absolute;
     transition: all 1s ease-in-out;
-    background-color: wheat;
+    
 }
 
 .foreground {
     z-index: 1000;
+}
+.speech-bubble {
+    background: #fff;
+    border-radius: 60px;
+    color: black;
+    padding: 5px 5px 5px 20px;
+    font-size: 12px;
+    opacity: 1;
+    width: 300px;
+    transition: all 1s ease-in-out;
+
 }
 
 .character {
