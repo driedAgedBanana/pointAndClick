@@ -1,6 +1,6 @@
 body {
-    background-color: black;
-    color: #fff;
+    background-color: #000;
+    color: #FFF;
     display: grid;
     grid-template-columns: auto 800px auto;
 }
@@ -11,78 +11,70 @@ body {
     text-align: center;
 }
 
-#mainChar {
-    left: 347px;
-    top: 20px;
-}
-
-/*Dialouge bar*/
+/*Dialogue bar*/
 #diagBar {
     bottom: 0px;
     left: 0px;
-    width: 823px;
+    width: 800px;
     height: 64px;
 }
 
 #diagContent {
     position: relative;
+    width: 800px;
+    height: 64px;
 }
 
 #mainCharSpeech {
     top: 0px;
     left: 80px;
-    bottom: 0px;
 }
 
 #brownBar {
     position: absolute;
-    background-color: brown;
-    height: 36px;
+    background-color: #442c1c;
     width: 823px;
-}
-
-#funeral1 {
-    width: 70px;
-    height: 37px;
-    left: 702px;
-    top: 377px;
-}
-
-#grass1 {
-    width: 70px;
-    height: 45px;
-    left: 300px;
-    top: 28px;
+    height: 32px;
+    bottom: 0px;
 }
 
 #gameWindow {
     width: 800px;
     height: 608px;
-    background-color: red;
+    background-color: blue;
     grid-row-start: 2;
     grid-column-start: 2;
     position: relative;
 }
 
-.gameObject{ 
+#mainChar {
+    left: 400px;
+    top: 170px;
+}
+
+#grass1 {
+    width: 32px;
+    height: 64px;
+    left: 177px;
+    top: 288px;
+}
+
+#funeral1 {
+    width: 66px;
+    height: 44px;
+    left: 707px;
+    top: 370px;
+}
+
+/*Classes*/
+.gameObject {
     position: absolute;
     transition: all 1s ease-in-out;
-    
+    /*background-color: #FFF;*/
 }
 
 .foreground {
     z-index: 1000;
-}
-.speech-bubble {
-    background: #fff;
-    border-radius: 60px;
-    color: black;
-    padding: 5px 5px 5px 20px;
-    font-size: 12px;
-    opacity: 1;
-    width: 300px;
-    transition: all 1s ease-in-out;
-
 }
 
 .character {
@@ -91,4 +83,15 @@ body {
 
 .background {
     z-index: 0;
+}
+
+.speech-bubble {
+    background: #ffffff;
+    border-radius: 60px;
+    color: #000;
+    padding: 5px 5px 5px 20px;
+    font-size: 12px;
+    opacity: 0;
+    width: 300px;
+    transition: all 1s ease-in-out;
 }
