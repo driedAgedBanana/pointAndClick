@@ -12,20 +12,20 @@ body {
 }
 
 /*Dialogue bar*/
-#diagBar {
+#dialogueBar {
     bottom: 0px;
     left: 0px;
     width: 800px;
     height: 64px;
 }
 
-#diagContent {
+#dialogueContent {
     position: relative;
     width: 800px;
     height: 64px;
 }
 
-#mainCharSpeech {
+#mainCharacterSpeech {
     top: 0px;
     left: 80px;
 }
@@ -38,6 +38,18 @@ body {
     bottom: 0px;
 }
 
+#counterSpeech {
+    top: 0px;
+    right: 80px;
+}
+
+#counterCharacter {
+    top: 0px;
+    right: 0px;
+    opacity: 0;
+}
+
+
 #gameWindow {
     width: 800px;
     height: 608px;
@@ -47,23 +59,30 @@ body {
     position: relative;
 }
 
-#mainChar {
+#mainCharacter {
     left: 400px;
     top: 170px;
 }
 
-#grass1 {
-    width: 32px;
-    height: 64px;
-    left: 177px;
-    top: 288px;
+#funeral1 {
+    width: 67px;
+    height: 43px;
+    left: 700px;
+    top: 376px;
 }
 
-#funeral1 {
-    width: 66px;
-    height: 44px;
-    left: 707px;
-    top: 370px;
+#grass1 {
+    width: 284px;
+    height: 74px;
+    left: 218px;
+    top: 11px;
+}
+
+#statue {
+    width: 32px;
+    height: 64px;
+    left: 704px;
+    top: 285px;
 }
 
 /*Classes*/

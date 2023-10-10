@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Point and click adventure</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css">
+    <title>point and click adventure</title>
+    <link href="CSS/style.css" rel="stylesheet">
 </head>
+
 <body>
     <h1 id="mainTitle"></h1>
-    <div id="gameWindow">    
-      <!--Dialogue bar-->
-      <div id="diagBar" class="gameObject foreground">
-        <div id="diagContent">
-         <img id="Hero" src="./Img/BlueDino.png" alt="mainChar">
-         <div id="mainCharSpeech" class="gameObject foreground speech-bubble">test</div>
-         <div id="counterSpeech" class="gameObject foreground speech-bubble">...</div>
-         
-         <div id="brownBar" class="gameObject foreground"></div>
-      </div>
+    <div id="gameWindow">
+        <!--dialogue bar-->
+        <div id="dialogueBar" class="gameObject foreground">
+            <div id="dialogueContent">
+                <div id="brownBar" class="gameObject foreground"></div>
+
+                <img id="hero" class="gameObject foreground" src="./Img/BlueDino.png" alt="main character">
+                <div id="mainCharacterSpeech" class="gameObject foreground speech-bubble">...</div>
+                <div id="counterSpeech" class="gameObject foreground speech-bubble">...</div>
+                <img id="counterCharacter" class="gameObject foreground" src="img/Screenshot 2023-04-05 211820.png"
+                    alt="counter character">
+            </div>
+        </div>
+
+        <!--foreground layer-->
+        <div id="funeral1" class="gameObject foreground"></div>
+        <div id="grass1" class="gameObject foreground"></div>
+        <div id="statue" class="gameObject foreground"></div>
+
+        <!--main character layer-->
+        <div id="mainCharacter" class="gameObject character">
+            <img src="img/BlueDino.png" alt="main character">
+        </div>
+
+        <!--background layer-->
+        <div id="titlemap" class="gameObject background">
+            <img src="img/TheGrassPointaCick.png" alt="tilemap">
+        </div>
     </div>
-
-     <!-- foreground-->
-     <div id="funeral1" class="gameObject foreground"></div>
-      <div id="grass1" class="gameObject foreground"></div>
-
-     <!--mainCharacter layer-->
-      <div id="mainChar" class="gameObject character">
-        <img src="./Img/BlueDino.png" alt="main character">
-      </div>
-
-     <!--background layer-->
-     <div id="tilemap" class="gameObject background">
-        <img src="./Img/TheGrassPointaCick.png" alt="">
-
-     </div>
-    </div>
-     <script src="./JavaScript/index.js"></script>
+    <audio id="characterAudio">
+        <source src="./Audio/audio_Gibberish - Sound Effect_01.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="counterAudio">
+        <source src="./Audio/audio_high pitch voice.mp3" type="audio/mpeg">
+    </audio>
+    <script src="./JavaScript/index.js"></script>
 </body>
 
 </html>
